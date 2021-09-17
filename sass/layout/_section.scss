@@ -13,11 +13,5 @@
 
 .section-team {
   background-color: var(--second-bg-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.section-portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @include sectionPadding();
 }

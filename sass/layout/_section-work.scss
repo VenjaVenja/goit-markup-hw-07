@@ -1,6 +1,5 @@
 .section-work {
-  padding-top: 47px;
-  padding-bottom: 94px;
+  @include sectionPadding($pt: 47px);
 }
 
 .work-list {
@@ -8,5 +7,28 @@
   justify-content: space-between;
   & .item:not(:last-child) {
     margin-right: 30px;
+  }
+  & .item {
+    position: relative;
+  }
+}
+
+.work-label {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(47, 48, 58, 0.6);
+  & .titel {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
   }
 }

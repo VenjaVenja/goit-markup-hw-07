@@ -34,10 +34,6 @@
   margin-bottom: 50px;
   list-style: none;
 }
-// .team-list .titel,
-.works-list .titel {
-  color: var(--titel-text-color);
-}
 
 .socials-list {
   display: flex;
@@ -55,9 +51,7 @@
 .socials-link {
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include displayFlex();
   border-radius: 50%;
   background-color: var(--primary-white-color);
   fill: #afb1b8;

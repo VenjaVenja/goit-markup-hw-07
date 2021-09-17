@@ -1,11 +1,34 @@
-.works-list .example {
-  text-decoration: none;
+.section-portfolio {
+  @include sectionPadding();
 }
 
-.works-list .text {
-  font-size: 16px;
-  line-height: 1.87;
+.works-list {
+  display: flex;
+  flex-wrap: wrap;
+  & .example {
+    text-decoration: none;
+  }
+  & .text {
+    font-size: 16px;
+    line-height: 1.87;
+  }
+  & .titel {
+    color: var(--titel-text-color);
+  }
 }
+
+// .works-list .titel {
+//   color: var(--titel-text-color);
+// }
+
+// .works-list .example {
+//   text-decoration: none;
+// }
+
+// .works-list .text {
+//   font-size: 16px;
+//   line-height: 1.87;
+// }
 
 .example-overlay {
   position: relative;
@@ -38,57 +61,45 @@
   transform: translateY(0%);
 }
 
-.cards-info .titel {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
+// .cards-info .titel {
+//   font-weight: 700;
+//   font-size: 18px;
+//   line-height: 2;
+//   letter-spacing: 0.06em;
+// }
 
 .cards {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+  &:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
 }
 
-.cards:nth-child(3n) {
-  margin-right: 0;
-}
+// .cards:nth-child(3n) {
+//   margin-right: 0;
+// }
 
-.cards:nth-last-child(-n + 3) {
-  margin-bottom: 0;
-}
+// .cards:nth-last-child(-n + 3) {
+//   margin-bottom: 0;
+// }
 
 .cards-info {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
+  & .titel {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+  }
 }
 
-.cards-info .titel {
-  margin-bottom: 4px;
-}
-
-.work-label-titel {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--primary-white-color);
-}
-
-.work-list .item {
-  position: relative;
-}
-
-.work-label {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 70px;
-  left: 0;
-  bottom: 0;
-  background-color: rgba(47, 48, 58, 0.8);
-}
+// .cards-info .titel {
+//   margin-bottom: 4px;
+// }
