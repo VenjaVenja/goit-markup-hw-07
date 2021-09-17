@@ -15,9 +15,7 @@
 
 .work-label {
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include displayFlex();
   width: 100%;
   height: 70px;
   left: 0;
