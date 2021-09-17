@@ -1,14 +1,6 @@
 .section {
   background-color: var(--primary-white-color);
 }
-.section-team {
-  background-color: var(--second-bg-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.section-titel {
-  margin-bottom: 50px;
-}
 
 .section-titel {
   color: var(--titel-text-color);
@@ -16,6 +8,13 @@
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-team {
+  background-color: var(--second-bg-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .section-portfolio {

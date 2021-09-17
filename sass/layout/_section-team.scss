@@ -1,10 +1,21 @@
 .team-list {
   display: flex;
   justify-content: space-between;
-}
-
-.team-list .item:not(:last-child) {
-  margin-right: 30px;
+  & .item:not(:last-child) {
+    margin-right: 30px;
+  }
+  & .titel {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--titel-text-color);
+  }
+  & .text {
+    font-size: 16px;
+    line-height: 1.19;
+    margin-bottom: 16px;
+  }
 }
 
 .card {
@@ -19,23 +30,11 @@
   padding-bottom: 30px;
 }
 
-.team-list .titel {
-  margin-bottom: 10px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-}
-.team-list .text {
-  font-size: 16px;
-  line-height: 1.19;
-  margin-bottom: 16px;
-}
-
 .filter-list {
   margin-bottom: 50px;
   list-style: none;
 }
-.team-list .titel,
+// .team-list .titel,
 .works-list .titel {
   color: var(--titel-text-color);
 }
@@ -48,10 +47,9 @@
 .socials-item {
   width: 44px;
   height: 44px;
-}
-
-.socials-item:not(:last-child) {
-  margin-right: 10px;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .socials-link {
@@ -65,18 +63,16 @@
   fill: #afb1b8;
   transition: background-color var(--time-duration) var(--time-function),
     fill var(--time-duration) var(--time-function);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+  &:hover .socials-icon,
+  &:focus .socials-icon {
+    fill: var(--primary-white-color);
+  }
 }
 
 .socials-icon {
   transition: fill var(--time-duration) var(--time-function);
-}
-
-.socials-link:hover,
-.socials-link:focus {
-  background-color: var(--accent-color);
-}
-
-.socials-link:hover .socials-icon,
-.socials-link:focus .socials-icon {
-  fill: var(--primary-white-color);
 }
