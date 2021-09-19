@@ -1,14 +1,14 @@
-.section-work {
+.work {
   @include sectionPadding($pt: 47px);
 }
 
 .work-list {
   display: flex;
   justify-content: space-between;
-  & .item:not(:last-child) {
+  &__item:not(:last-child) {
     margin-right: 30px;
   }
-  & .item {
+  &__item {
     position: relative;
   }
 }
@@ -21,7 +21,7 @@
   left: 0;
   bottom: 0;
   background-color: rgba(47, 48, 58, 0.6);
-  & .titel {
+  &__titel {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;

@@ -1,22 +1,24 @@
-.header-logo:hover,
-.footer-logo:hover {
-  animation: shake-logo 400ms var(--time-function) infinite;
-}
-
-.page-header .logo {
-  color: var(--titel-text-color);
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.footer .logo {
-  color: var(--primary-white-color);
-}
-.page-header .logo,
-.footer .logo {
+.logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  text-decoration: none;
+  &__header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-decoration: none;
+    color: var(--titel-text-color);
+  }
+  &__footer {
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: var(--primary-white-color);
+  }
+  &__text {
+    color: var(--accent-color);
+  }
+  &:hover {
+    animation: shake-logo 400ms var(--time-function) infinite;
+  }
 }

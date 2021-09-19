@@ -1,17 +1,21 @@
-.main-nav {
-  display: flex;
-  align-items: center;
+.header {
+  background-color: var(--primary-white-color);
+  border-bottom: 1px solid #ececec;
+  &__container {
+    display: flex;
+  }
 }
+
 .site-nav {
   display: flex;
   margin-left: 93px;
-  & .item {
+  &__item {
     position: relative;
   }
-  & .item + .item {
+  &__item + &__item {
     margin-left: 50px;
   }
-  & .link {
+  &__link {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -46,10 +50,10 @@
 .auth-nav {
   display: flex;
   margin-left: auto;
-  & .item + .item {
+  &__item + &__item {
     margin-left: 50px;
   }
-  & .link {
+  &__link {
     display: inline-flex;
     align-items: center;
     padding-top: 32px;
@@ -65,9 +69,8 @@
       color: var(--accent-color);
     }
   }
-}
-
-.icon-nav {
-  fill: currentColor;
-  margin-right: 10px;
+  &__icon {
+    fill: currentColor;
+    margin-right: 10px;
+  }
 }
